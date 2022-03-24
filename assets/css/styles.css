@@ -28,6 +28,7 @@ html {
 body {
     height: 100vh;
     display: flex;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
     background-color: var(--very-dark-blue);
@@ -92,7 +93,7 @@ body {
 
 .rate:hover {
     color: var(--white);
-    background-color: var(--orange);
+    background-color: var(--light-grey);
 }
 
 #star {
@@ -104,4 +105,46 @@ body {
 
 #star > img {
     display: block;
+}
+
+.selected {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+/* THANK YOU SECTION */
+#main-section-thank {
+    padding: 2.5rem;
+    max-width: 40rem;
+    border-radius: 1.5rem;
+    background-color: var(--dark-blue);
+}
+
+#title-thank {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--white);
+    margin: 2.5rem 0px 1rem 0px;
+}
+
+#desc-thank {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--light-grey);
+}
+
+#feedback {
+    font-size: 1.5rem;
+    width: fit-content;
+    border-radius: 2rem;
+    color: var(--orange);
+    padding: .8rem 2.5rem;
+    margin: 3rem auto 0px auto;
+    background-color: var(--very-dark-blue);
+}
+
+#img-thank {
+    display: block;
+    margin: auto;
 }
