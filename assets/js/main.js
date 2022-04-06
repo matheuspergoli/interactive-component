@@ -1,9 +1,11 @@
-document.querySelectorAll('.rate').forEach(rate => {
-    rate.addEventListener('click', () => {
-        document.querySelectorAll('.rate').forEach(rateElem => {
-            rateElem.classList.remove('selected')
+const rateItem = document.querySelectorAll('.rate')
+
+rateItem.forEach(item => {
+    item.addEventListener('click', () => {
+        rateItem.forEach(item => {
+            item.classList.remove('selected')
         })
-        rate.classList.toggle('selected')
+        item.classList.add('selected')
     })
 })
 
